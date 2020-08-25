@@ -1,0 +1,69 @@
+.audio-button {
+    display: inline-block;
+    font-size: 16px;
+    // font-weight: 900;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 2px;
+    // background-color: #333333;
+    background-color: #d9d9d9;
+    // max-width: 165px;
+    // padding: 15px;
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    // text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 10px;
+    // color: #ffffff;
+    color: #333333;
+    border-radius: 6px;
+    padding: 8px 5px 4px 5px;
+
+    &::before {
+        content: none;
+    }
+
+    >* {
+        display: inline-block;
+    }
+
+    &__icons {
+        width: 13px;
+
+        svg {
+            // fill: #fff;
+            fill: #333333;
+        }
+    }
+
+
+    &__title {
+        margin-left: 5px;
+        // color: rgba(255, 255, 255, 0.77);
+        user-select: none;
+    }
+
+    .soundcite {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+        background: rgba(212, 77, 35, 0.1) 100.944%;
+
+        &::before {
+            content: none;
+        }
+    }
+
+    &__duration {
+        // color: rgba(255, 255, 255, 0.77);
+        padding-left: 10px;
+        opacity: .6;
+        user-select: none;
+    }
+}
